@@ -2,7 +2,7 @@
 
 **Roni Bandini · May 2026 · Argentina · [@RoniBandini](https://twitter.com/RoniBandini)**
 
-Audio-based drone detection running on a Qualcomm RUBIK Pi 3. An Edge Impulse audio classifier listens continuously for drone sounds; when confidence exceeds a configurable threshold, a webcam snapshot is taken and analyzed by a local vision LLM (OpenClaw) to visually confirm the presence of a drone, identify its make and model, and decide whether to log or alert. Alerts are delivered via Telegram and a physical LED on the GPIO.
+Audio-based drone detection running on a Qualcomm RUBIK Pi 3. An Edge Impulse audio classifier listens continuously for drone sounds; when confidence exceeds a configurable threshold, a webcam snapshot is taken and analyzed by a local instance of OpenClaw to confirm the presence of a drone, identify its make and model, and decide whether to log or alert. Alerts are delivered via Telegram and a physical LED on the GPIO.
 
 ---
 

@@ -63,27 +63,17 @@ pip3 install requests pyaudio opencv-python python-periphery
 
 ### OpenClaw
 
-Install and configure [OpenClaw](https://github.com/lumosityfarm/openclaw) with a vision-capable agent named `main`. Confirm the binary path with:
-
-```bash
-which openclaw
-```
-
-If OpenClaw is not on PATH, set the full path directly in `drone15.py`:
-
-```python
-cmd = ["/home/ubuntu/.npm-global/bin/openclaw", "agent", ...]
-```
+Install and configure [OpenClaw](https://github.com/lumosityfarm/openclaw) with a vision-capable model.
 
 ### Edge Impulse model
 
-Download your trained `.eim` model from [Edge Impulse Studio](https://studio.edgeimpulse.com). The model must have been trained with at least a `drone` label.
+Download your trained `.eim` model from [Edge Impulse Studio](https://studio.edgeimpulse.com).  
 
 ---
 
 ## Configuration
 
-All settings are at the top of `drone15.py`:
+All settings are at the top of `drone.py`:
 
 | Variable | Default | Description |
 |---|---|---|
@@ -141,10 +131,10 @@ Reasoning     : A small white quadcopter with a gimbal camera is visible flying 
 
 ```
 🚨 ALERTA - Detección de Dron
-Modelo: DJI Mini 4 Pro
-Tamaño: small
-Confianza de audio: 88.40%
-Razón: Small quadcopter visible at low altitude near perimeter.
+Model: DJI Mini 4 Pro
+Size: small
+Confidence: 88.40%
+Reason: Small quadcopter visible at low altitude near perimeter.
 ```
 
 ---
@@ -152,8 +142,7 @@ Razón: Small quadcopter visible at low altitude near perimeter.
 ## Project Structure
 
 ```
-├── drone15.py      # Main detection script
-├── run.sh          # Launcher (suppresses ALSA/JACK stderr noise)
+├── drone.py      # Main detection script
 ├── drone.csv       # Detection log (auto-created on first run)
 └── README.md
 ```

@@ -130,7 +130,7 @@ Reasoning     : A small white quadcopter with a gimbal camera is visible flying 
 ### Telegram alert
 
 ```
-🚨 ALERTA - Detección de Dron
+🚨 ALERT - Drone detected
 Model: DJI Mini 4 Pro
 Size: small
 Confidence: 88.40%
@@ -149,7 +149,7 @@ https://www.youtube.com/watch?v=togAkkwYE-E
 ```
 ├── drone.py      # Main detection script
 ├── drone.csv       # Detection log (auto-created on first run)
-└── README.md
+└── README.md # This file
 ```
 
 ---

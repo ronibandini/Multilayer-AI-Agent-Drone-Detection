@@ -144,6 +144,11 @@ https://www.youtube.com/watch?v=togAkkwYE-E
 
 ---
 
+## Complete tutorial
+https://docs.edgeimpulse.com/projects/expert-network/multilayer-ai-agent-drone-detection-rubik-pi-3 
+
+---
+
 ## Project Structure
 
 ```
